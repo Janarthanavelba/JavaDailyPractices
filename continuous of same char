@@ -1,0 +1,33 @@
+//Java program to count the continuous same characters in the string 
+import java.util.*;
+
+class Count_Character {
+    public static void main(String args[]) {
+        Scanner obj = new Scanner(System.in);
+        String str = obj.nextLine();
+        char[] ch = str.toCharArray();
+        int b = 1;
+        for (int i = 0; i < str.length() - 1; i++) 
+        {
+            if (ch[i] == ch[i + 1]) 
+            {
+                b++;
+            } 
+            else 
+            {
+                if (b > 1) 
+                {
+                    System.out.printf("%c%d", ch[i], b);
+                } 
+                else
+                 {
+                    System.out.print(ch[i]);
+                }
+                b = 1;
+            }
+        }
+        if (b > 1)  System.out.printf("%c%d", ch[str.length() - 1], b);
+        else        System.out.print(ch[str.length() - 1]);
+        
+    }
+}
