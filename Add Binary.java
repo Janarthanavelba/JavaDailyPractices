@@ -1,5 +1,5 @@
 //Given two binary strings a and b, return their sum as a binary string.
-//Using BigInteger variable
+//Using BigInteger variable.
 
 import java.math.BigInteger; //Must Import java.math.BigInteger package
 
